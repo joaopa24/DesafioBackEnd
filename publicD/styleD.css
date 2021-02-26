@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    text-align: center;
+    padding: 30px;
+    background-color: whitesmoke;
+    border-bottom: solid 0.25px rgba(0, 0, 0, 0.384);
+}
+header a{
+    padding:24px;
+    font-size: 18px;
+    line-height: 10px;
+    font-weight: 800;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.753);
+    text-transform: uppercase;
+
+}
+/*About*/
+.cont {
+    text-align: center;
+    padding-top: 100px;
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    
+}
+.infoD {
+    text-align: left;
+    font-size: 32px;
+    padding-top: 120px;
+}
+/* Courses */
+.cards{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+    
+.card{
+    background-color: rgba(0, 0, 0, 0.9);
+    display: grid;
+    padding: 40px 0px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: rgba(0, 0, 0, 0.055) 0.1px solid;
+    
+}
+.card img{
+    width: 90%;
+    height: 161px;
+    margin:0 auto;
+}
+
+.info{
+    padding: 10px;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.info p{
+    padding: 0px 15px;
+}
+/* Modal */
+.modaloverlay {
+   background-color: rgba(0, 0, 0, 0.753);
+   position: fixed;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   visibility: hidden;
+   opacity: 0;
+}
+.modal {
+    background-color: white;
+    position: relative;
+    height: 80%;
+    width: 90%;
+    margin: 5vh auto;
+    border-radius: 10px;
+}
+iframe{
+    position: absolute;
+    width: 100%;
+    height: 98%;
+    top: 4%;
+    border-radius: 0px 0px 10px 10px;
+}
+.close-modal{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+/*active*/
+.modaloverlay.active{
+    visibility: visible;
+    opacity: 1;
+}
+/* Curso */
+#wrappe{
+    text-align: center;
+    padding: 32px;
+}
+.image{
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 350px;
+    height: 350px;
+    border-radius: 60%;
+    border:5px solid rgba(85, 85, 85, 0.788);
+} 
+.image img{
+    position: relative;
+    width: 250px;
+    height: 200px;
+    top:20%;
+    left:0%;
+}
+#wrappe h1{
+    padding: 24px;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+#wrappe p{
+    font-size: 32px;
+}

@@ -1,0 +1,25 @@
+{% extends "layout.njk" %}
+{% block content %}
+  <div class="cards">
+    {% for about in about %}
+      <div class="card" id="{{about.name}}">
+        <img src="{{about.img}}" alt="">
+        <div class="info">
+          <p>{{about.name}}</p>
+          <p>{{about.animal}}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="modaloverlay">
+    <div class="modal">
+      <a href="" class="close-modal">
+        <i class="material-icons">close</i>
+      </a>
+      <div class="modalconteudo">
+        <iframe src="" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+  <script src="/script.js"></script>
+{% endblock %}

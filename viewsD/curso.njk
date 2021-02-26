@@ -1,0 +1,10 @@
+{% extends "layout.njk" %}
+{% block content %}
+    <div id="wrappe">
+        <div class="image">
+            <img src="{{item.img}}" alt="Imagem">
+        </div>
+        <h1>{{item.name}}</h1>
+        <p>{{item.animal}} </p>
+    </div>
+{% endblock %}
