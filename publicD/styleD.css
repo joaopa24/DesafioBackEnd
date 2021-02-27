@@ -2,9 +2,16 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: 'Montserrat', sans-serif;
+
+    
+}
+html,body{
+    height: 100%;
+    
 }
 header{
     text-align: center;
@@ -21,6 +28,13 @@ header a{
     color: rgba(0, 0, 0, 0.753);
     text-transform: uppercase;
 
+}
+footer{
+    width: 100%;
+    text-align: center;
+    margin-top:auto;
+    background-color: lightgray;
+    padding: 20px;
 }
 /*About*/
 .cont {
