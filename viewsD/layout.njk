@@ -9,13 +9,17 @@
     {% endblock %}
 </head>
 <body>
+    <div class="container">
     <header>
          <a href="/">Sobre</a>
          <a href="/Conteudo">Conteúdo</a>
     </header>
+    
     {% block content %}
     {% endblock %}
-    {% include "footer.njk" %}
     
+    {% include "footer.njk" %}
+</div>
+
 </body>
 </html>
