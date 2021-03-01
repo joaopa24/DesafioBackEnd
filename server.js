@@ -4,10 +4,10 @@ const dataD = require('./data')
 const server = express()
 
 
-server.use(express.static('publicD'))
+server.use(express.static('public'))
 server.set("view engine", "njk")
 
-nunjucks.configure("viewsD", {
+nunjucks.configure("views", {
   express: server
 })
 
